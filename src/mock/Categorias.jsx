@@ -7,15 +7,21 @@ const Categorias = [
     },
     {
         id: 2,
-        type: "calzado-urbano",
-        title: "Calzado Urbano",
-        address:"/products/calzado-urbano"
+        type: "uno",
+        title: "Uno",
+        address:"/products/uno"
     },
     {
         id: 3,
-        type: "calzado-deportivo",
-        title: "Calzado Deportivo",
-        address:"/products/calzado-deportivo"
+        type: "dos",
+        title: "Dos",
+        address:"/products/dos"
+    },
+    {
+        id: 4,
+        type: "tres",
+        title: "Tres",
+        address:"/products/tres"
     },
 ]
 

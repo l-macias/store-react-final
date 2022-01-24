@@ -18,7 +18,7 @@ const ItemDetail = ({product}) => {
     return (
         <div className='detailContainer'>
             <div className='detail'>
-                <img src={require(`../../images/products/${product.pictureUrl}`)} alt={`${product.id}-${product.title}`} className='flex-col' />
+                <img src={product.pictureUrl} alt={`${product.id}-${product.title}`} className='flex-col' />
                 <div className='notImgCol'>
                     <div className='textsCol'>
                         <h1 className='detailTitle'>{product.title}</h1>
