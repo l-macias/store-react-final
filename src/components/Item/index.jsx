@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-// Item card
+
 
 const Item = ({item}) => (
     <Link className="linkCardProduct" to={`/product/${item.id}`}>

@@ -6,7 +6,7 @@ const ItemCounter = ({stock, onAdd}) => {
     const [count, setCount] = useState(0)
 
     const sumar = () => {
-        if(count<stock) { //Minimo control de stock - solo hace que no se pueda exceder del stock de cada producto,
+        if(count<stock) { 
 
             setCount(prevCount => prevCount+1)
             

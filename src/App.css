@@ -518,6 +518,8 @@
 
   .total {
     text-align: end;
+    display: flex;
+    justify-content: space-evenly;
     padding: 20px 0;
     margin: 40px;
     border-top: 2px solid black;
