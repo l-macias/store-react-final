@@ -19,7 +19,8 @@ const Cart = () => {
                         
                         return (
                         <div className="itemLine" key={item.id}>
-                            <h1 className="textLine">{`Codigo: ${item.id} - ${item.title} - $${item.price} - Cant: ${item.quantity}`}</h1>
+                            <h1 className="textLine">{`Codigo: ${item.id} - ${item.title} - $${item.price} `}</h1>
+                            <h2>{` Cantidad: ${item.quantity}`}</h2>
                             <button className='removeItem' onClick={()=>removeItem(item)}>Eliminar artículo</button>
                         </div>
                         )
