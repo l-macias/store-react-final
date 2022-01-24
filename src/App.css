@@ -254,6 +254,8 @@
   .containerSelector {
     display: flex;
     padding: 20px 0;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
   }
 
   .containerSelector > form > select {
