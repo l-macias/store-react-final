@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom'
 
 const ItemListContainer = () => {
    
-   // Acá va la Promise
 
    const [items, setItems] = useState([]) 
 
@@ -15,7 +14,7 @@ const ItemListContainer = () => {
    
    useEffect(() => {
       setLoading(true)
-      const itemPromise = new Promise((res, rej) => {
+      const itemPromise = new Promise((res) => {
          
          setTimeout(()=> {
             let myData = catId ? MockedItems.filter((item) => item.category === catId) : MockedItems;

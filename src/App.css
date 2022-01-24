@@ -65,8 +65,8 @@
 }
 
 .image {
-  width: 182px;
-  height: 182px;
+  width: 250px;
+  height: 250px;
   margin: 0;
   padding: 0;
 }
@@ -75,20 +75,20 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: fit-content;
-  margin: 25px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
 }
 
 .boxProduct {
   margin: 0;
-  padding: 0;
-  height: 170px;
+  padding: 10px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: fit-content;
+  align-items: center;
+  width: 250px;
   border: 1px solid black;
 }
 
@@ -97,7 +97,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 20px;
   width: 180px;
 }
 
@@ -115,11 +115,10 @@
   width: fit-content;
   align-self: center;
 
-  font-size: 16px;
+  font-size: 28px;
   padding: 10px 0;
   margin-top: 5px;
-  border-top: 2px solid #27e741;
-  border-bottom: 2px solid #27e741;
+
   justify-self: flex-end;
 }
 
@@ -129,7 +128,7 @@
   }
 
   .contenedor-Nav {
-    width: 50%;
+    width: 250px;
   }
 
   .hamb-menu {
@@ -337,10 +336,10 @@
   }
 
   .detail {
-    width: 800px;
+    width: 750px;
     display: flex;
     padding: 15px;
-    border: 2px solid #27e741;
+    border: 2px solid black;
     flex-wrap: wrap;
   }
 
@@ -444,7 +443,7 @@
   .myCart {
     align-self: center;
     margin-top: 2rem;
-    border-bottom: 2px solid #27e741;
+
     padding-bottom: 10px;
   }
 
@@ -469,7 +468,7 @@
   .finalizar:hover,
   .finalizar:focus {
     background-color: rgb(145, 145, 124);
-    color: #ff4800;
+    color: #27e741;
     cursor: pointer;
   }
 
@@ -481,7 +480,7 @@
 
   .restar:disabled,
   .sumar:disabled {
-    background-color: rgb(121, 121, 100);
+    background-color: rgb(153, 153, 149);
     color: rgb(104, 103, 103);
     cursor: default;
     border: none;
