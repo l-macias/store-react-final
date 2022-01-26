@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  background-color: rgb(199, 206, 164);
 }
 
 .navfull {
@@ -90,6 +91,7 @@
   align-items: center;
   width: 250px;
   border: 1px solid black;
+  border-left: none;
 }
 
 .nameProduct {
@@ -193,7 +195,7 @@
     top: -5px;
     left: -14px;
     z-index: 1;
-    background-color: #27e741;
+    background-color: rgb(112, 214, 72);
     transition: all 0.1s linear;
   }
   .box2 {
@@ -242,7 +244,7 @@
     position: relative;
     top: -9px;
     right: 5px;
-    background-color: #27e741;
+    background-color: rgb(112, 214, 72);
     align-items: center;
     justify-content: center;
     padding: 2px 3px;
@@ -259,7 +261,7 @@
   }
 
   .containerSelector > form > select {
-    background: #27e741;
+    background: rgb(112, 214, 72);
     color: #fff;
     border: none;
     padding: 5px;
@@ -267,7 +269,7 @@
   }
 
   .inputSelector {
-    background: #27e741;
+    background: rgb(112, 214, 72);
     color: #fff;
     border: none;
     padding: 5px;
@@ -282,7 +284,7 @@
   }
 
   .categoryTag {
-    background-color: #27e741;
+    background-color: rgb(112, 214, 72);
     margin: 0 15px;
     color: #fff;
     padding: 10px;
@@ -294,8 +296,8 @@
     box-sizing: border-box;
     background-color: #fff;
     margin: 0 15px;
-    color: #27e741;
-    border: 2px solid #27e741;
+    color: rgb(112, 214, 72);
+    border: 2px solid rgb(112, 214, 72);
   }
 
   .activeClass {
@@ -303,8 +305,8 @@
     box-sizing: border-box;
     background-color: #fff;
     margin: 0 15px;
-    color: #27e741;
-    border: 2px solid #27e741;
+    color: rgb(112, 214, 72);
+    border: 2px solid rgb(112, 214, 72);
   }
 
   .loading {
@@ -394,13 +396,13 @@
     width: 40px;
     height: 40px;
     background-color: rgb(196, 196, 179);
-    color: #27e741;
+    color: rgb(112, 214, 72);
   }
 
   .btnCount:hover,
   .btnCount:focus {
     cursor: pointer;
-    border: 2px solid #27e741;
+    border: 2px solid rgb(112, 214, 72);
   }
 
   .btnCount:focus {
@@ -431,7 +433,7 @@
   }
 
   .addToCart {
-    background-color: #27e741;
+    background-color: rgb(112, 214, 72);
     color: #fff;
   }
 
@@ -456,7 +458,7 @@
   }
 
   .finalizar {
-    background-color: #27e741;
+    background-color: rgb(112, 214, 72);
     color: #fff;
     font-size: 20px;
   }
@@ -470,7 +472,7 @@
   .finalizar:hover,
   .finalizar:focus {
     background-color: rgb(145, 145, 124);
-    color: #27e741;
+    color: rgb(12, 12, 12);
     cursor: pointer;
   }
 
@@ -494,13 +496,13 @@
 
   .itemAdded {
     align-self: center;
-    color: rgb(4, 158, 4);
+    color: rgb(112, 214, 72);
   }
 
   .removeItem:hover,
   .removeItem:focus {
     background-color: beige;
-    color: #27e741;
+    color: rgb(112, 214, 72);
     cursor: pointer;
   }
 
@@ -513,7 +515,7 @@
   }
   .itemLine:hover {
     padding: 18px;
-    border: 2px solid #27e741;
+    border: 2px solid rgb(112, 214, 72);
   }
 
   .total {
@@ -535,7 +537,7 @@
     align-self: center;
     letter-spacing: 1px;
     font-weight: bold;
-    color: #27e741;
+    color: rgb(112, 214, 72);
   }
 
   .returnLink:hover,
