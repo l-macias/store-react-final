@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
-import MockedItems from "../../mock/MockedItems"
 import ItemList from "../../components/ItemList"
 import { useParams } from 'react-router-dom'
+import { getFirestore } from "../../firebase"
+
+
 
 const ItemListContainer = () => {
    
@@ -12,22 +14,30 @@ const ItemListContainer = () => {
 
    const  {catId}  = useParams()
    
+ 
+
    useEffect(() => {
       setLoading(true)
-      const itemPromise = new Promise((res) => {
-         
-         setTimeout(()=> {
-            let myData = catId ? MockedItems.filter((item) => item.category === catId) : MockedItems;
+      
+      const db = getFirestore()
+      const productCollection = db.collection("articulos")
+      
+      
+      setTimeout(()=> {
+      productCollection.get().then(value => {
+         let datos = value.docs.map(e => {
+            return{...e.data(), id: e.id}
+         })
+         let myData = catId ? datos.filter((item) => item.category === catId) : datos;
             
-            if(catId === "all") {
-               myData = MockedItems
-            }
-            res(myData)}, 500)
-      })
-      itemPromise.then((res) => {
-         setItems(res)
-      })
-      .finally(()=> setLoading(false))
+         if(catId === "all") {
+            myData = datos
+            
+         }
+         setItems(myData)
+         setLoading(false)
+         
+     })},1000)
    }, [catId])
    
    return(

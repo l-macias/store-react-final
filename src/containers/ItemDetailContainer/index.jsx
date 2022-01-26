@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from "react"
-import MockedItems from "../../mock/MockedItems"
 import { useParams } from 'react-router-dom'
 import { ItemDetail } from "../../components/ItemDetail"
+import { getFirestore } from '../../firebase' 
 
 
 
@@ -15,29 +15,30 @@ const ItemDetailContainer = () => {
 
     const  { itemId }  = useParams()
 
+   
     
-
     useEffect(() => {
         setLoading(true)
-        const itemPromise = new Promise((res) => {
-            
-            setTimeout(()=> {
-            const myData = MockedItems.find((item) => item.id === itemId);
-            
-            
-            
-            res(myData)}, 500)
-        })
-        itemPromise.then((res) => {
-            setProduct(res)
-            
-        })
-        .finally(()=> setLoading(false))
-    }, [itemId]);
+        
+        const db = getFirestore()
+        const productCollection = db.collection("articulos")
 
+    setTimeout(()=> {
+        productCollection.get().then(value => {
+            let datos = value.docs.map(e => {
+                return {...e.data(), id: e.id}
+            
+            })
+            console.log (datos)
+            const singleProd = datos.find((e) => e.id === itemId);
+            setProduct(singleProd)
+            setLoading(false)
+    })},1500) 
+    }, [itemId])
+    
     return loading ? <h2 className="loading">Cargando...</h2> :
     <ItemDetail product={product} />
+       
 }
 
-
-export default ItemDetailContainer;
+export default ItemDetailContainer
