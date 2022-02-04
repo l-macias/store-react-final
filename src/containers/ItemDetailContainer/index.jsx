@@ -36,7 +36,8 @@ const ItemDetailContainer = () => {
     })},1500) 
     }, [itemId])
     
-    return loading ? <h2 className="loading">Cargando...</h2> :
+    return loading ? <img className="loadingDetailContainer" src="https://i.gifer.com/M99a.gif" alt="cargando el contenido" /> :
+    
     <ItemDetail product={product} />
        
 }

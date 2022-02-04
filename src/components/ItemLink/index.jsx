@@ -11,7 +11,7 @@ const Categorias = [
 const ItemLink = () => {
     const [categorias, setCategorias] = useState([])
     useEffect(() => {
-        const promesaCat = new Promise((res,rej) => {
+        const promesaCat = new Promise((res) => {
             res(Categorias);
         });
 

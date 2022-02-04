@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(199, 206, 164);
+  background-color: rgb(255, 255, 255);
 }
 
 .navfull {
@@ -47,7 +47,15 @@
 .logo {
   font-size: 20px;
   font-weight: bold;
-  font-style: italic;
+  color: rgb(131, 170, 204) ;
+  display:flex;
+  margin-left: 40%;
+}
+.titulo {
+  color: rgb(131, 170, 204);
+  border: 4px  black double;
+  margin-bottom: 20px;
+  
 }
 
 .nav-icon {
@@ -62,12 +70,13 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  
 }
 
 .image {
-  width: 250px;
-  height: 250px;
+  width: 187; /*/187-374*/
+  height: 224px; /*/448 224*/
   margin: 0;
   padding: 0;
 }
@@ -85,7 +94,7 @@
 .boxProduct {
   margin: 0;
   padding: 10px;
-  height: 250px;
+  height: 224px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,7 +204,7 @@
     top: -5px;
     left: -14px;
     z-index: 1;
-    background-color: rgb(112, 214, 72);
+    background-color: rgb(131, 170, 204);
     transition: all 0.1s linear;
   }
   .box2 {
@@ -210,14 +219,11 @@
   }
 
   .navbar-nav a:hover {
-    color: aliceblue;
-    top: 3px;
-    left: -6px;
+    color: rgb(131, 170, 204);
+    
   }
   .navbar-nav a:hover ~ .box1 {
     display: block;
-    top: -2px;
-    left: -21px;
     opacity: 1;
   }
   .navbar-nav a:hover ~ .box2 {
@@ -242,15 +248,16 @@
   .cart-items {
     display: flex;
     position: relative;
-    top: -9px;
-    right: 5px;
-    background-color: rgb(112, 214, 72);
+    top: -7px;
+    right: 1px;
+    background-color: rgb(131, 170, 204);
     align-items: center;
     justify-content: center;
-    padding: 2px 3px;
-    border-radius: 30%;
-    color: white;
-    font-size: 12px;
+    padding: 3px 3px;
+    border-radius: 40% 1px;
+    color: rgb(131, 170, 204);
+    font-size: 14px;
+    font-weight: bold
   }
 
   .containerSelector {
@@ -258,10 +265,11 @@
     padding: 20px 0;
     border-bottom: solid black 1px;
     border-top: solid black 1px;
+    margin-bottom: 50px;
   }
 
   .containerSelector > form > select {
-    background: rgb(112, 214, 72);
+    background: rgb(131, 170, 204);
     color: #fff;
     border: none;
     padding: 5px;
@@ -269,7 +277,7 @@
   }
 
   .inputSelector {
-    background: rgb(112, 214, 72);
+    background: rgb(131, 170, 204);
     color: #fff;
     border: none;
     padding: 5px;
@@ -284,11 +292,12 @@
   }
 
   .categoryTag {
-    background-color: rgb(112, 214, 72);
+    background-color: rgb(131, 170, 204);
     margin: 0 15px;
     color: #fff;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 5%;
     text-decoration: none;
   }
   .categoryTag:hover {
@@ -296,8 +305,8 @@
     box-sizing: border-box;
     background-color: #fff;
     margin: 0 15px;
-    color: rgb(112, 214, 72);
-    border: 2px solid rgb(112, 214, 72);
+    color: rgb(131, 170, 204);
+    border: 2px solid rgb(131, 170, 204);
   }
 
   .activeClass {
@@ -305,51 +314,58 @@
     box-sizing: border-box;
     background-color: #fff;
     margin: 0 15px;
-    color: rgb(112, 214, 72);
-    border: 2px solid rgb(112, 214, 72);
+    color: rgb(131, 170, 204);
+    border: 2px solid rgb(131, 170, 204);
   }
 
-  .loading {
+  .loadingDetailContainer {
     margin-top: 2rem;
+    width: 500px;
+    margin-left: 30%;
+    
+  }
+  .loadingListContainer {
+    margin-top: 2rem;
+    margin-left: 10%;
+    width: 300px;
+    
+    
   }
 
   .linkCardProduct {
     text-decoration: none;
     color: black;
-    transition: all 0.5s ease;
+    
   }
   .linkCardProduct:visited {
     text-decoration: none;
   }
-  .linkCardProduct:hover {
-    text-decoration: none;
-    scale: 110%;
-    transition: all 0.5s ease;
-  }
+
   .linkCardProduct:focus {
     text-decoration: none;
   }
 
   .detailContainer {
     width: 100%;
-    height: 80vh;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 
   .detail {
     width: 750px;
     display: flex;
     padding: 15px;
-    border: 2px solid black;
+    border: 3px solid black;
     flex-wrap: wrap;
   }
 
   .flex-col {
-    width: 400px;
-    height: 400px;
+    width: 374px;
+    height: 448px;
     border: 2px solid black;
   }
 
@@ -396,13 +412,13 @@
     width: 40px;
     height: 40px;
     background-color: rgb(196, 196, 179);
-    color: rgb(112, 214, 72);
+    color: rgb(131, 170, 204);
   }
 
   .btnCount:hover,
   .btnCount:focus {
     cursor: pointer;
-    border: 2px solid rgb(112, 214, 72);
+    border: 2px solid rgb(131, 170, 204);
   }
 
   .btnCount:focus {
@@ -433,7 +449,7 @@
   }
 
   .addToCart {
-    background-color: rgb(112, 214, 72);
+    background-color: rgb(131, 170, 204);
     color: #fff;
   }
 
@@ -458,7 +474,7 @@
   }
 
   .finalizar {
-    background-color: rgb(112, 214, 72);
+    background-color: rgb(131, 170, 204);
     color: #fff;
     font-size: 20px;
   }
@@ -496,13 +512,13 @@
 
   .itemAdded {
     align-self: center;
-    color: rgb(112, 214, 72);
+    color: rgb(131, 170, 204);
   }
 
   .removeItem:hover,
   .removeItem:focus {
     background-color: beige;
-    color: rgb(112, 214, 72);
+    color: rgb(131, 170, 204);
     cursor: pointer;
   }
 
@@ -515,7 +531,7 @@
   }
   .itemLine:hover {
     padding: 18px;
-    border: 2px solid rgb(112, 214, 72);
+    border: 2px solid rgb(131, 170, 204);
   }
 
   .total {
@@ -537,7 +553,7 @@
     align-self: center;
     letter-spacing: 1px;
     font-weight: bold;
-    color: rgb(112, 214, 72);
+    color: rgb(131, 170, 204);
   }
 
   .returnLink:hover,

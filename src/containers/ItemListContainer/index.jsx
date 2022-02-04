@@ -41,7 +41,7 @@ const ItemListContainer = () => {
    }, [catId])
    
    return(
-      loading ? <h2 className="loading">Cargando...</h2> :
+      loading ? <img className="loadingListContainer" src="https://c.tenor.com/9IsrqCRzmNwAAAAC/tyrannosaurus-dinosaur.gif" alt="Cargando el contenido" /> :
       <ItemList items={items}/>)
 }
 

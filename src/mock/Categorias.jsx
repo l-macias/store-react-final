@@ -7,21 +7,21 @@ const Categorias = [
     },
     {
         id: 2,
-        type: "uno",
-        title: "Uno",
-        address:"/products/uno"
+        type: "accion",
+        title: "Accion",
+        address:"/products/accion"
     },
     {
         id: 3,
-        type: "dos",
-        title: "Dos",
-        address:"/products/dos"
+        type: "estrategia",
+        title: "Estrategia",
+        address:"/products/estrategia"
     },
     {
         id: 4,
-        type: "tres",
-        title: "Tres",
-        address:"/products/tres"
+        type: "deportes",
+        title: "Deportes",
+        address:"/products/deportes"
     },
 ]
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import CategorySelector from "../containers/CategorySelector";
 import ItemDetailContainer from "../containers/ItemDetailContainer";
@@ -20,8 +20,9 @@ const Router = () => {
           marginTop: '30px',
           
          }}>
-                <h1>TIENDA RANDOM</h1>
-                <h2>Bienvenidos a una tienda con productos ficticios y aleatorios</h2>
+                <h1 className="titulo"> ESTIM</h1>
+                <h2>Bienvenidos a la peor tienda online con menos contenido del mundo, pero con algunos juegos divertidos</h2>
+                <h3>Te invitamos a que conozcas nuestros pocos Juegos ingresando en la sección <Link className="returnLink" to={"/products"}>PRODUCTOS</Link></h3>
               </div>
             </Route>
             <Route path="/products">
