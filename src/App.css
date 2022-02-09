@@ -49,7 +49,7 @@
   font-weight: bold;
   color: rgb(131, 170, 204) ;
   display:flex;
-  margin-left: 40%;
+  margin-left: 0;
 }
 .titulo {
   color: rgb(131, 170, 204);
@@ -405,7 +405,7 @@
     box-sizing: border-box;
   }
 
-  .btnCount {
+  .btnCant {
     border: none;
     font-size: 20px;
     font-weight: bold;
@@ -415,13 +415,14 @@
     color: rgb(131, 170, 204);
   }
 
-  .btnCount:hover,
-  .btnCount:focus {
+  .btnCant:hover,
+  .btnCant:focus {
     cursor: pointer;
     border: 2px solid rgb(131, 170, 204);
+    color: #43e643
   }
 
-  .btnCount:focus {
+  .btnCant:focus {
     background-color: rgb(223, 223, 203);
   }
 
@@ -441,11 +442,16 @@
 
   .removeItem {
     min-width: 10%;
+    border: 1px solid red;
+    color:red;
   }
 
-  .textLine {
-    max-width: 80%;
+  .itemCart {
+    
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(82, 82, 187);
   }
 
   .addToCart {
@@ -458,6 +464,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
   }
 
   .myCart {
@@ -476,6 +483,7 @@
   .finalizar {
     background-color: rgb(131, 170, 204);
     color: #fff;
+    margin-left: 10px;
     font-size: 20px;
   }
 
@@ -522,16 +530,19 @@
     cursor: pointer;
   }
 
-  .itemLine {
+  .itemCartFlex {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
+    width: 85%;
+    align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
+    
   }
-  .itemLine:hover {
-    padding: 18px;
+  .itemCartFlex:hover {
+    
     border: 2px solid rgb(131, 170, 204);
+    
   }
 
   .total {
@@ -567,4 +578,33 @@
     cursor: default;
     border: none;
   }
+
+  .formulario {
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-width: .2rem;
+    border: solid 1px (131, 170, 204);
+    border-radius: 30px 50px 0 0;
+    color: black;
+    margin-bottom: 20px;
+    
+  }
+  .contenedorCart {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+  .formulario__btn {
+    background-color: rgb(131, 170, 204);
+    border-color: white;
+  }
+  
+  .formulario__btn:hover {
+    background-color: #000;
+    border-color: white;
+  }
+
 }

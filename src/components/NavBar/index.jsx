@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return(
         <nav className='navfull'>
-            <div className='logo'><p>TIENDA RANDOM</p></div>
+            <div className='logo'><h3>ESTIM - Pocos juegos | Mucha onda</h3></div>
             <div className='contenedor-Nav'>
                 <div className="hamb-menu">
                     <i className="fa fa-bars"></i>
@@ -22,7 +22,6 @@ const NavBar = () => {
                     <ul className='navbar-nav'>
                         
                         <ItemLink />
-
                         <li className="item cart-li">
                             {show && <CartWidget />}
                         </li>
@@ -32,18 +31,5 @@ const NavBar = () => {
         </nav>
     )
 }
-//hoverMenu()
-
 
 export default NavBar;
-
-
-
-
-
-
-
-
-
-
-

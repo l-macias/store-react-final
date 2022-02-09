@@ -3,31 +3,31 @@ import React, { useState } from 'react';
 
 const ItemCounter = ({stock, onAdd}) => {
     
-    const [count, setCount] = useState(0)
+    const [Cant, setCant] = useState(0)
 
     const sumar = () => {
-        if(count<stock) { 
+        if(Cant<stock) { 
 
-            setCount(prevCount => prevCount+1)
+            setCant(prevCant => prevCant+1)
             
         } 
     }
     const restar = () => {
-        if(count>0){
-            setCount(prevCount => prevCount-1)
+        if(Cant>0){
+            setCant(prevCant => prevCant-1)
         }
     }
 
     return (
         <>
             <div className='detailBtns'>
-                <button className='btnCount restar' disabled={count===0} onClick={restar}>-</button>
-                <p>{count}</p>
-                <button className='btnCount sumar' disabled={count===stock} onClick={sumar}>+</button> 
+                <button className='btnCant restar' disabled={Cant===0} onClick={restar}>-</button>
+                <p>{Cant}</p>
+                <button className='btnCant sumar' disabled={Cant===stock} onClick={sumar}>+</button> 
             </div>
             <div>
                 <div className='btnsContainer'>
-                    <button className='addToCart' disabled={count===0} onClick={()=> onAdd(count) }>Agregar al Carrito</button> 
+                    <button className='addToCart' disabled={Cant===0} onClick={()=> onAdd(Cant) }>Agregar al Carrito</button> 
                 </div> 
             </div>
         </>

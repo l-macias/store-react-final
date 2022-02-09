@@ -6,7 +6,7 @@ function CartWidget() {
         
         <div className="cart-btn">
             <span className="nav-icon">
-                <Link to="/cart"><i className="fas fa-cart-plus"></i></Link>
+                <Link to="/cart"><i className="fas fa-gamepad"></i></Link>
             </span>
             <div className="cart-items"><CartCount /></div>
         </div>

@@ -11,6 +11,5 @@ const CategoryList = ({categories}) => {
     )
 }
 
-
 export default CategoryList
 

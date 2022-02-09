@@ -5,6 +5,7 @@ import ItemDetailContainer from "../containers/ItemDetailContainer";
 import ItemListContainer from "../containers/ItemListContainer";
 import { CartContextProvider } from "../context/CartContext";
 import Cart from "../components/Cart"
+import Form from "../components/Form";
 
 const Router = () => {
     return(  
@@ -49,6 +50,7 @@ const Router = () => {
             </Route> 
             <Route exact path="/cart"> 
               <Cart />
+              <Form />
             </Route> 
             <Route path="/*">
               <h1>Error 404 - Página no encontrada</h1>

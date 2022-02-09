@@ -1,10 +1,7 @@
 import Item from '../Item'
 import React from 'react'
 
-
 const ItemList = ({items}) => {
-    
-    
 
     return(
         <>
@@ -14,7 +11,6 @@ const ItemList = ({items}) => {
         </>
     )
 }
-
 
 export default ItemList
 
