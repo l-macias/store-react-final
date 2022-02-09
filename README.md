@@ -25,6 +25,6 @@ Instrucciones para su reproducción:
 FUNCIONAMIENTO DEL SITIO WEB (GIF)
 
 
-![Image text](https://thumbs.gfycat.com/MetallicTatteredAvians-size_restricted.gif)
+![Image text](https://im3.ezgif.com/tmp/ezgif-3-aecb26dec7.gif)
 
 Agradecimiento especiales a mi tutora Etel Perez y a la Profesora Angeles Peña.
