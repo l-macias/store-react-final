@@ -26,6 +26,6 @@ Instrucciones para su reproducción:
 FUNCIONAMIENTO DEL SITIO WEB (GIF)
 
 
-![Image text](https://im3.ezgif.com/tmp/ezgif-3-aecb26dec7.gif)
+![Image text](https://im3.ezgif.com/tmp/ezgif-3-4cbda568c2.gif)
 
 Agradecimiento especiales a mi tutora Etel Perez y a la Profesora Angeles Peña y perdón por el diseño desastroso, pero tengo  un problema personal con css.
