@@ -1,4 +1,4 @@
-Proyecto realizado para Curso de React dictado por Coderhouse.
+Proyecto realizado para Curso de React.
 El proyecto es una tienda online con un carrito de compras.
 Las tecnologías utilizadas en el curso fueron:
 
@@ -23,9 +23,3 @@ Instrucciones para su reproducción:
 ​5. Por útlimo ingresar al mismo desde cualquier navegador, ingresando http://localhost:3000 en la barra de direcciones.
 
 
-FUNCIONAMIENTO DEL SITIO WEB (GIF)
-
-
-![Image text](https://im3.ezgif.com/tmp/ezgif-3-4cbda568c2.gif)
-
-Agradecimiento especiales a mi tutora Etel Perez y a la Profesora Angeles Peña y perdón por el diseño desastroso, pero tengo  un problema personal con css.
